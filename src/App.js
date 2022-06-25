@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Attribution from "./Attribution";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>
+        My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun
+        Total this month $478.33 +2.4% from last month
+      </p>
+      <Attribution />
+    </>
   );
 }
 
