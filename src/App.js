@@ -1,14 +1,16 @@
 import Attribution from "./Attribution";
+import Balance from "./Balance";
+import Spending from "./Spending";
 
 function App() {
   return (
-    <>
-      <p>
-        My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun
-        Total this month $478.33 +2.4% from last month
-      </p>
-      <Attribution />
-    </>
+    <main>
+      <div class="container">
+        <Balance />
+        <Spending />
+        <Attribution />
+      </div>
+    </main>
   );
 }
 
