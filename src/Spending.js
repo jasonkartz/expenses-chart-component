@@ -5,13 +5,13 @@ export default function Spending() {
       <section class="graph-container">
         <div class="graph-column">
           <div class="graph-bar-container">
-            <div class="dummy-bar"></div>
+            <div class="dummy-bar" style={{ height: "75%" }}></div>
           </div>
           <h5>mon</h5>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
-            <div class="dummy-bar-two"></div>
+            <div class="dummy-bar" style={{ height: "25%" }}></div>
           </div>
           <h5>tue</h5>
         </div>
