@@ -5,13 +5,13 @@ export default function Spending() {
       <section class="graph-container">
         <div class="graph-column">
           <div class="graph-bar-container">
-            <div></div>
+            <div class="dummy-bar"></div>
           </div>
           <h5>mon</h5>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
-            <div></div>
+            <div class="dummy-bar-two"></div>
           </div>
           <h5>tue</h5>
         </div>

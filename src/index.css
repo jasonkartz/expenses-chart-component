@@ -87,6 +87,20 @@ main {
   display: grid;
   grid-template-rows: 3fr 1fr;
 }
+.dummy-bar,
+ .dummy-bar-two {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 3px;
+}
+.dummy-bar {
+  height: 75%;
+}
+
+.dummy-bar-two {
+  height: 25%;
+}
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
