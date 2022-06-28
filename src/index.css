@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
+/* Colors */
+:root {
+
+/* Primary */
+--soft-red: hsl(10, 79%, 65%);
+--cyan: hsl(186, 34%, 60%);
+
+/* Neutral */
+--dark-brown: hsl(25, 47%, 15%);
+--medium-brown: hsl(28, 10%, 53%);
+--cream: hsl(27, 66%, 92%);
+--very-pale-orange: hsl(33, 100%, 98%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +22,10 @@
 
 body {
   font-family: 'DM Sans', 'Fira Sans', 'Droid Sans', sans-serif;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(27, 66%, 92%);
+  background-color: var(--cream);
 }
 
 main {
@@ -21,7 +36,7 @@ main {
   height: 100vh;
 }
 .container {
-  width: 50%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,9 +45,8 @@ main {
 
 /* Balance */
 .balance-box {
- height: 25%;
- background-color: hsl(10, 79%, 65%);
- color: hsl(33, 100%, 98%);
+ background-color: var(--soft-red);
+ color: var(--very-pale-orange);
  width: 100%;
  border-radius: 10px;
  padding: 1em;
@@ -53,14 +67,14 @@ main {
 .icon .brown-circle {
   width: 45px;
   height: 45px;
-  background-color: hsl(25, 47%, 15%);
+  background-color: var(--dark-brown);
   border-radius: 100%;
   position: relative;
 }
 .icon .brown-circle .white-outline {
   width: 100%;
   height: 100%;
-  border: 1px solid hsl(33, 100%, 98%);
+  border: 1px solid var(--very-pale-orange);
   border-radius: 100%;
   position: absolute;
   left: -25px;
@@ -70,8 +84,8 @@ main {
 /* Spending */
 
 .spending-box {
-  background-color: hsl(33, 100%, 98%);
-  color: hsl(25, 47%, 15%);
+  background-color: var(--very-pale-orange);
+  color: var(--dark-brown);
   width: 100%;
   border-radius: 10px;
   padding: 1.5em;
@@ -80,28 +94,55 @@ main {
   gap: 1em;
 }
 .graph-container {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  justify-items: center;
+  width: 100%;
+  border-bottom: solid 1px var(--medium-brown);
+  display: flex;
+  justify-content: space-evenly;
 }
 .graph-column {
-  width: 50px;
+  height: 175px;
+  width: 14%;
   display: grid;
   grid-template-rows: 3fr 1fr;
-  border: 1px red solid;
 }
 .graph-column h5 {
   justify-self: center;
+  color: var(--medium-brown);
 }
 .graph-bar-container {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  align-items: center;
+  gap: .25em;
+}
+.graph-bar-label {
+  width: 100%;
+  text-align: center;
+  color: var(--very-pale-orange);
+  background-color: var(--dark-brown);
+  border-radius: 3px;
+  padding: .25em;
 }
 .dummy-bar {
   width: 75%;
-  background-color: hsl(10, 79%, 65%);
+  background-color: var(--soft-red);
   border-radius: 3px;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.total-section h5 {
+  color: var(--medium-brown);
+}
+.total-section-left h1 {
+  font-size: 2em;
+}
+.total-section-right {
+  text-align: right;
 }
 
 
