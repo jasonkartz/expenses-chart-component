@@ -3,7 +3,7 @@ export default function Balance() {
     <div class="balance-box">
       <section class="balance-text">
         <p>My balance</p>
-        <h1>$921.48</h1>
+        <h2>$921.48</h2>
       </section>
       <section class="icon">
         <div class="brown-circle">

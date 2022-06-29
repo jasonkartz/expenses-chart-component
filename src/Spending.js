@@ -8,54 +8,56 @@ export default function Spending() {
             <div class="graph-bar-label">$56.32</div>
             <div class="dummy-bar" style={{ height: "75%" }}></div>
           </div>
-          <h5>mon</h5>
+          <p class="mini-caption">mon</p>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
             <div class="graph-bar-label">$46.32</div>
             <div class="dummy-bar" style={{ height: "25%" }}></div>
           </div>
-          <h5>tue</h5>
+          <p class="mini-caption">tue</p>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
             <div></div>
           </div>
-          <h5>wed</h5>
+          <p class="mini-caption">wed</p>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
             <div></div>
           </div>
-          <h5>thu</h5>
+          <p class="mini-caption">thu</p>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
             <div></div>
           </div>
-          <h5>fri</h5>
+          <p class="mini-caption">fri</p>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
             <div></div>
           </div>
-          <h5>sat</h5>
+          <p class="mini-caption">sat</p>
         </div>
         <div class="graph-column">
           <div class="graph-bar-container">
             <div></div>
           </div>
-          <h5>sun</h5>
+          <p class="mini-caption">sun</p>
         </div>
       </section>
       <section class="total-section">
         <div class="total-section-left">
-          <h5>Total this month</h5>
+          <p class="mini-caption">Total this month</p>
           <h1>$478.33</h1>
         </div>
         <div class="total-section-right">
-          <h4>+2.4%</h4>
-          <h5>from last month</h5>
+          <p>
+            <strong>+2.4%</strong>
+          </p>
+          <p class="mini-caption">from last month</p>
         </div>
       </section>
     </div>

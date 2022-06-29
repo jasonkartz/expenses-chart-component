@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
-/* Colors */
+/* Variables */
 :root {
 
-/* Primary */
+/* Primary Colors */
 --soft-red: hsl(10, 79%, 65%);
 --cyan: hsl(186, 34%, 60%);
 
-/* Neutral */
+/* Neutral Colors */
 --dark-brown: hsl(25, 47%, 15%);
 --medium-brown: hsl(28, 10%, 53%);
 --cream: hsl(27, 66%, 92%);
 --very-pale-orange: hsl(33, 100%, 98%);
+
+/* Fonts */
+--heading-xl: 48px;
+--heading-l: 32px;
+--mini-caption: 15px;
 }
 
 * {
@@ -23,24 +28,38 @@
 body {
   font-family: 'DM Sans', 'Fira Sans', 'Droid Sans', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--cream);
 }
-
+h1 {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+}
+h2 {
+  font-size: var(--heading-l);
+  font-weight: 700;
+}
+.mini-caption {
+  font-size: var(--mini-caption);
+  color: var(--medium-brown);
+}
 main {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5em;
   height: 100vh;
+  margin: 0 1em;
 }
 .container {
-  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  width: 100%;
+  max-width: 540px;
 }
 
 /* Balance */
@@ -95,19 +114,19 @@ main {
 }
 .graph-container {
   width: 100%;
-  border-bottom: solid 1px var(--medium-brown);
+  border-bottom: solid 2px var(--cream);
   display: flex;
   justify-content: space-evenly;
+  gap: 5px;
 }
 .graph-column {
   height: 175px;
-  width: 14%;
+  width: 15%;
   display: grid;
   grid-template-rows: 3fr 1fr;
 }
-.graph-column h5 {
+.graph-column p {
   justify-self: center;
-  color: var(--medium-brown);
 }
 .graph-bar-container {
   display: flex;
@@ -117,12 +136,11 @@ main {
   gap: .25em;
 }
 .graph-bar-label {
-  width: 100%;
   text-align: center;
   color: var(--very-pale-orange);
   background-color: var(--dark-brown);
   border-radius: 3px;
-  padding: .25em;
+  padding: .5em;
 }
 .dummy-bar {
   width: 75%;
