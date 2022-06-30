@@ -1,6 +1,6 @@
 export default function Attribution() {
   return (
-    <p class="attribution">
+    <p className="attribution">
       Challenge by{" "}
       <a
         href="https://www.frontendmentor.io?ref=challenge"

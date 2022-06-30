@@ -5,7 +5,7 @@ import Spending from "./Spending";
 function App() {
   return (
     <main>
-      <div class="container">
+      <div className="container">
         <Balance />
         <Spending />
         <Attribution />

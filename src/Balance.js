@@ -1,13 +1,13 @@
 export default function Balance() {
   return (
-    <div class="balance-box">
-      <section class="balance-text">
+    <div className="balance-box">
+      <section className="balance-text">
         <p>My balance</p>
         <h2>$921.48</h2>
       </section>
-      <section class="icon">
-        <div class="brown-circle">
-          <div class="white-outline"></div>
+      <section className="icon">
+        <div className="brown-circle">
+          <div className="white-outline"></div>
         </div>
       </section>
     </div>
