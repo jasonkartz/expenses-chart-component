@@ -1,4 +1,4 @@
-export default function Attribution() {
+export default function Attribution({ name }) {
   return (
     <p className="attribution">
       Challenge by{" "}
@@ -11,7 +11,7 @@ export default function Attribution() {
       </a>
       . Coded by{" "}
       <a href="https://jasonkartz.com/" target="_blank" rel="noreferrer">
-        Jason Kartz
+        {name}
       </a>
       .
     </p>

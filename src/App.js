@@ -8,7 +8,7 @@ function App() {
       <div className="container">
         <Balance />
         <Spending />
-        <Attribution />
+        <Attribution name={"Jason Kartz"} />
       </div>
     </main>
   );

@@ -2,56 +2,34 @@ import data from "./data.json";
 
 export default function Spending() {
   // divide each number by highest number and multiply by 100 to get scaled percentages.
-  console.log(data);
+
+  let highestAmount = 0;
+
+  data.forEach((data) =>
+    data.amount > highestAmount ? (highestAmount = data.amount) : highestAmount
+  );
+
+  const graphData = data.map((data, index) => {
+    const barHeight = (data.amount / highestAmount) * 150;
+    return (
+      <div className="graph-column" key={index}>
+        <div className="graph-bar-label">${data.amount}</div>
+        <div
+          className="graph-bar"
+          style={{
+            height: barHeight + "px",
+            backgroundColor: data.amount === highestAmount && "#76B5BC",
+          }}
+        ></div>
+        <p className="mini-caption">{data.day}</p>
+      </div>
+    );
+  });
+
   return (
     <div className="spending-box">
       <h2>Spending - Last 7 days</h2>
-      <section className="graph-container">
-        <div className="graph-column">
-          <div className="graph-bar-container">
-            <div className="graph-bar-label">$56.32</div>
-            <div className="dummy-bar" style={{ height: "75%" }}></div>
-          </div>
-          <p className="mini-caption">mon</p>
-        </div>
-        <div className="graph-column">
-          <div className="graph-bar-container">
-            <div className="graph-bar-label">$46.32</div>
-            <div className="dummy-bar" style={{ height: "25%" }}></div>
-          </div>
-          <p className="mini-caption">tue</p>
-        </div>
-        <div className="graph-column">
-          <div className="graph-bar-container">
-            <div></div>
-          </div>
-          <p className="mini-caption">wed</p>
-        </div>
-        <div className="graph-column">
-          <div className="graph-bar-container">
-            <div></div>
-          </div>
-          <p className="mini-caption">thu</p>
-        </div>
-        <div className="graph-column">
-          <div className="graph-bar-container">
-            <div></div>
-          </div>
-          <p className="mini-caption">fri</p>
-        </div>
-        <div className="graph-column">
-          <div className="graph-bar-container">
-            <div></div>
-          </div>
-          <p className="mini-caption">sat</p>
-        </div>
-        <div className="graph-column">
-          <div className="graph-bar-container">
-            <div></div>
-          </div>
-          <p className="mini-caption">sun</p>
-        </div>
-      </section>
+      <section className="graph-container">{graphData}</section>
       <section className="total-section">
         <div className="total-section-left">
           <p className="mini-caption">Total this month</p>
