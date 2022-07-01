@@ -1,8 +1,6 @@
 import data from "./data.json";
 
 export default function Spending() {
-  // divide each number by highest number and multiply by 100 to get scaled percentages.
-
   let highestAmount = 0;
 
   data.forEach((data) =>
